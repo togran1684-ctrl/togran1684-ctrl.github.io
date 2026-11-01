@@ -1,0 +1,21 @@
+:root { --bg:#f7f7f5; --card:#fff; --text:#1d1f23; --muted:#5f636b; --line:#e4e4e0; --accent:#0e7490; }
+@media (prefers-color-scheme: dark) { :root { --bg:#0e1117; --card:#161a22; --text:#e8eaee; --muted:#9aa1ad; --line:#262c38; --accent:#22d3ee; } }
+* { box-sizing: border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif; }
+.wrap { max-width:760px; margin:0 auto; padding:40px 20px 80px; }
+header { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:28px; }
+.brand { font-weight:800; font-size:20px; letter-spacing:-.01em; text-decoration:none; color:var(--text); }
+nav a { color:var(--muted); text-decoration:none; margin-left:16px; font-size:14px; }
+nav a:hover, a { color:var(--accent); }
+h1 { font-size:28px; line-height:1.3; margin:0 0 8px; letter-spacing:-.02em; }
+h2 { font-size:19px; margin:36px 0 8px; }
+h3 { font-size:16px; margin:22px 0 6px; }
+p, li { color:var(--text); }
+.muted { color:var(--muted); font-size:14px; }
+.card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:18px 0; }
+ul { padding-left:20px; }
+table { border-collapse:collapse; width:100%; font-size:14.5px; }
+th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+th { background:color-mix(in srgb, var(--line) 40%, transparent); }
+hr { border:0; border-top:1px solid var(--line); margin:40px 0; }
+footer { margin-top:48px; color:var(--muted); font-size:13px; }
